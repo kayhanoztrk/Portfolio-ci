@@ -1,0 +1,640 @@
+/* CSS Document */
+
+@font-face {
+    font-family: 'gray';
+    src: url('fonts/gray.eot');
+    src: url('fonts/grayd41d.eot?#iefix') format('embedded-opentype'),
+         url('fonts/gray.woff') format('woff'),
+         url('fonts/gray.ttf') format('truetype'),
+         url('fonts/gray.svg#BebasRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+HTML {
+	background:url(../images/bgred.gif);	
+}
+
+
+body {
+	overflow-y: scroll;
+	margin: 50px auto;
+	width: 1000px;
+	height:495px;
+	font-family: tahom, Arial, Helvetica, sans-serif;
+	box-shadow: -1px 1px 10px 1px #888;
+	-moz-box-shadow: -1px 1px 10px 1px #888;
+	-webkit-box-shadow: -1px 1px 10px 1px #888;
+}
+
+a {
+	cursor: pointer;	
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+	padding: 0;	
+}
+
+p {
+margin: 0;
+	line-height: 17px;
+}
+
+ul, ol {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 752px;	
+	float: right;
+}
+/* sidebar */
+.sidebar {
+	float:left;
+	position: relative;
+	height: 495px;
+	width: 248px;
+	background: rgb(226,51,24); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(226,51,24,1) 1%, rgba(219,24,24,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,rgba(226,51,24,1)), color-stop(100%,rgba(219,24,24,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(226,51,24,1) 1%,rgba(219,24,24,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(226,51,24,1) 1%,rgba(219,24,24,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(226,51,24,1) 1%,rgba(219,24,24,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(226,51,24,1) 1%,rgba(219,24,24,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e23318', endColorstr='#db1818',GradientType=0 ); /* IE6-9 */
+}
+
+.sidebarphoto {
+	top: 0px;
+	height: 495px;
+	width: 248px;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.sidebarphoto img {
+	max-width: 200px;
+	max-height: 380px;
+}
+/* end sidebar */
+
+/* footer */
+.footer {
+	height: 134px;	
+	width: 752px;
+	background:#000;
+	overflow: hidden;
+}
+
+.footer h1, .footer h3 {
+	color: #fff;
+	margin-bottom: 16px;
+}	
+.footer h1 {
+	font-size: 14px;
+}	
+
+.footer h3 {
+	font-size: 12px;
+	font-weight: normal;
+	font-style: italic;
+}
+/* end footer */
+
+/* main content */
+.content {
+	background: #fff;
+	height:361px;	
+	width: 752px;
+}
+
+#tabs {
+	float: left;
+}
+
+.tabicon {
+	float: right;
+	margin-top: 4px;
+	margin-right: 8px;
+}
+
+.tabtitle {
+	float: left;	
+}
+
+.thecontent {
+	margin: 30px;	
+}
+
+.contentitems {
+	margin: 20px 0 20px 40px;
+	border-left: 2px solid;
+	padding-left: 10px;
+}
+
+.thecontent h1 {
+	font-size: 24px;
+	margin-bottom: 20px;
+	font-family: gray;
+	color: #333;
+	font-weight: normal;
+}
+
+.thecontent h1 img {
+	float: right;
+}
+
+.thecontent p {
+	font-size: 11px;
+	font-weight: normal;
+}
+
+.thecontent a {
+	font-size: 12px;
+	font-weight: bold;
+	color: #FF1A1A;
+}
+
+.slide > h2 {
+	border-top: 1px solid #d5d5d5;
+}
+
+.holder {
+	margin: 26px;	
+}
+
+/* home */
+.personalinfo {
+	float: left;
+	margin-top: 30px;
+	width: 310px;
+	min-height: 230px;
+	margin-left: 10px;
+	background: #FAFAFA url(../images/widgetshadowtr.png) no-repeat left top;
+	padding: 40px 0 0 40px;
+}
+
+.personalinfo li {
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+
+ul.personalinfo li label {
+	background: #FA5151;
+	font-size: 12px;
+	float: left;
+	color: white;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	padding: 4px 7px;
+}
+
+ul.personalinfo li span {
+	float: right;
+	font-size: 12px;
+	width: 210px;
+}
+
+/* blog page */
+.blogpost {
+	margin-bottom: 20px;
+	position: relative;
+}
+
+.bloginfo {
+	background: #FA5151;
+	width: 40px;
+	height: 42px;
+	position: absolute;
+	top: 0;
+	left: -52px;
+	color: white;
+	text-align: center;
+}
+
+.day {
+	font-size: 14px;
+	font-family: gray;
+	margin-bottom: 2px;
+	margin-top: 2px;
+}
+
+.date {
+	font-weight: bold;
+	font-family: gray;
+	font-size: 14px;
+}
+
+.blogthumb {
+	float: left;
+	margin-right: 10px;
+}
+
+.backbutton {
+	margin-bottom: 10px;
+}
+
+/* portfolio */
+.album li {
+	float: left;
+	margin: 6px;
+	overflow: hidden;
+	display: block;
+}
+
+/* resume timeline */
+.timepart {
+	border-left: 3px solid #FF1A1A;
+	padding-left: 10px;	
+}
+
+.timepart h2 {
+	font-size: 12px;
+	font-weight: bold;
+	margin-bottom: 4px;
+}
+
+.timepart h3 {
+	font-size: 12px;
+	font-weight:normal;
+	color: gray;
+	margin-bottom: 4px;
+}
+
+.timepart p {
+	font-size: 11px;
+}
+
+.timeline li {
+	margin-bottom: 20px;
+}
+
+.timepart h2 span {
+	color: #FF1A1A;
+	font-size: 11px;
+	font-weight: normal;
+	float: right;
+}
+
+
+/* contact */
+.contactdetails {
+	border-left: 3px solid #FF1A1A;
+	padding-left: 10px;
+}
+
+.contactdetails li {
+	font-size: 12px;
+	line-height: 23px;	
+}
+
+/* socialicons */
+.facebook a {
+	background-position: -33px 0!important;	
+}
+.linkedin a {
+	background-position: -66px 0!important;	
+}
+
+.youtube a {
+	background-position: -99px 0!important;	
+}
+
+.rss a {
+	background-position: -132px 0!important;	
+}
+
+.skype a {
+	background-position: -165px 0!important;	
+}
+
+.fliker a {
+	background-position: -198px 0!important;	
+}
+
+.picasa a {
+	background-position: -231px 0!important;	
+}
+
+.digg a {
+	background-position: -264px 0!important;	
+}
+
+.vimeo a {
+	background-position: -297px 0!important;	
+}
+
+.plus a {
+	background-position: -330px 0!important;	
+}
+
+ul.mysocial li a {
+	display: inline-block;
+	width: 27px;
+	height: 27px;
+	font-size: 0px;
+	background: url(../images/social_icons.png) no-repeat;
+}
+
+ul.mysocial li {
+	float: left;
+	margin-top: 2px;
+	margin-right: 7px;
+}
+
+.socialicon:hover {
+	margin-top: 1px;
+	opacity: 0.8;
+}
+/* body shadow */
+.shadow {
+    position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	-moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.shadow:before,
+.shadow:after {
+    content:"";
+    position:absolute; 
+    z-index:-2;
+}
+
+.liftedcorners:before,
+.liftedcorners:after { 
+    bottom:15px;
+    left:10px;
+    width:50%;
+    height:20%;
+    max-width:300px;
+	-webkit-box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);   
+	-moz-box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
+	box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
+	-webkit-transform:rotate(-4deg);    
+	-moz-transform:rotate(-4deg);   
+	-ms-transform:rotate(-4deg);   
+	-o-transform:rotate(-4deg);
+	transform:rotate(-4deg);
+}
+
+.liftedcorners:after {
+    right:10px; 
+    left:auto;
+	-webkit-transform:rotate(4deg);   
+	-moz-transform:rotate(4deg);  
+	-ms-transform:rotate(4deg);  
+	-o-transform:rotate(4deg);
+	transform:rotate(4deg);
+}​
+
+
+.box h3{
+	text-align:center;
+	position:relative;
+	top:80px;
+}
+.box {
+	width:200px;
+	height:220px;
+	background:#FFF;
+	margin:40px auto;
+	z-index: 2;
+	background: black;
+}
+
+.effect2
+{
+  position: relative;
+}
+.effect2:before, .effect2:after
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #000;
+  -moz-box-shadow: 0 15px 10px #000;
+  box-shadow: 0 15px 10px #000;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+.effect2:after
+{
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+  right: 10px;
+  left: auto;
+}
+
+.effect4
+{
+  position: relative;
+}
+.effect4:after
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 11px;
+  right: 7px;
+  left: auto;
+  width: 50%;
+  top: 70%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #000;
+  -moz-box-shadow: 0 15px 10px #000;
+  box-shadow: 0 15px 10px #000;
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  -o-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  transform: rotate(5deg);
+}
+
+.effect5
+{
+  position: relative;
+}
+.effect5:before, .effect5:after
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 25px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 35px 20px #000;
+  -moz-box-shadow: 0 35px 20px #000;
+  box-shadow: 0 35px 20px #000;
+  -webkit-transform: rotate(-8deg);
+  -moz-transform: rotate(-8deg);
+  -o-transform: rotate(-8deg);
+  -ms-transform: rotate(-8deg);
+  transform: rotate(-8deg);
+}
+.effect5:after
+{
+  -webkit-transform: rotate(8deg);
+  -moz-transform: rotate(8deg);
+  -o-transform: rotate(8deg);
+  -ms-transform: rotate(8deg);
+  transform: rotate(8deg);
+  right: 10px;
+  left: auto;
+}
+
+/*==================================================
+ * Effect 7
+ * ===============================================*/
+.effect7
+{
+  	position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.effect7:before, .effect7:after
+{
+	content:"";
+    position:absolute;
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:0;
+    bottom:0;
+    left:10px;
+    right:10px;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+}
+.effect7:after
+{
+	right:10px;
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg);
+       -moz-transform:skew(8deg) rotate(3deg);
+        -ms-transform:skew(8deg) rotate(3deg);
+         -o-transform:skew(8deg) rotate(3deg);
+            transform:skew(8deg) rotate(3deg);
+}
+
+/*==================================================
+ * Effect 8
+ * ===============================================*/
+.effect8
+{
+  	position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.effect8:before, .effect8:after
+{
+	content:"";
+    position:absolute;
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:10px;
+    bottom:10px;
+    left:0;
+    right:0;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+}
+.effect8:after
+{
+	right:10px;
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg);
+       -moz-transform:skew(8deg) rotate(3deg);
+        -ms-transform:skew(8deg) rotate(3deg);
+         -o-transform:skew(8deg) rotate(3deg);
+            transform:skew(8deg) rotate(3deg);
+}
+
+.homearea {
+	background: url(../images/home_bg.jpg)!important;
+	color: #fff!important;
+	font-family: gray!important;
+	font-weight: normal!important;	
+	line-height: 40px;
+}
+
+.homearea h1 {
+	color: #fff;
+}
+
+.homearea h2 {
+	font-weight: normal!important;
+	text-shadow: 1px 1px #000;
+}
+
+.homearea h3 {
+	font-weight: normal!important;
+	text-shadow: 1px 1px #000;
+}
+
+.homearea .mydesc {
+	font-weight: bold!important;
+	font-family:tahoma!important;
+	text-shadow: 1px 1px #000;
+	margin-bottom: 20px;
+}
+
+/* my tweets */
+.twitStream{
+	font-family: verdana;
+	font-size: 11px;
+	background: #fff;
+	opacity: 0.7;
+	margin-top: 20px;
+	width: 270px;
+	float: right;
+	color: #000;
+	padding: 8px;
+	margin-right: 6px;
+}
+.twitStream a{
+	font-family: verdana;
+	font-size: 11px;
+}
+.tweet{
+	display: block;
+	padding: .4em;
+}
+.tweet-left img{
+	border: 2px solid #000000;
+}
+.tweet p.text{
+	margin: 0;
+	padding: 0;
+}
+
+.twitterbird {
+	float: right;
+}
